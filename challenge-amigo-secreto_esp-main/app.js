@@ -36,7 +36,7 @@ function agregarAmigo(){
     }
     listaAmigos.push(nombre); 
 
-   // asignarTextoelemento('#mensaje', nombre);
+   
     mostrarListaAmigos();
     document.getElementById('amigo').value = ""; // limpiar input
     //return;
@@ -54,4 +54,5 @@ function mostrarListaAmigos() {
         lista.appendChild(li);
     });
 }
+
 
