@@ -1,18 +1,12 @@
 let listaAmigos= [];
 
 
-function asignarTextoelemento(selector, texto){
-    const elementoHTML = document.querySelector(selector);
-    if (elementoHTML) {
-        elementoHTML.textContent = texto;
-    }
-}
+
 
 function sortearAmigo(){
     let numeroMaximo = listaAmigos.length;
     let numeroGenerado= Math.floor(Math.random()*numeroMaximo);
     console.log(listaAmigos[numeroGenerado]);
-    asignarTextoelemento('#mensaje', `Tu amigo secreto ${listaAmigos[numeroGenerado]}`);
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = ''; // Limpia resultados anteriores
     let li = document.createElement('li');
@@ -54,5 +48,6 @@ function mostrarListaAmigos() {
         lista.appendChild(li);
     });
 }
+
 
 
